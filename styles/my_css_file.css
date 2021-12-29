@@ -1,0 +1,89 @@
+
+  .divStyle1 {
+    // width: 64px; /* Ширина */
+    // height: 64px; /* Высота */
+    box-shadow: inset 0 0 6px; /* Параметры тени */
+    background: #c0c0c0;
+ }    
+	.styleright{
+	box-shadow: inset 0 0 6px; /* Параметры тени */
+	float: right; color: #000;
+	}
+  .battery {
+    width: 150px; /* Ширина */
+    height: 50px; /* Высота */
+    border: 4px solid #000; /* Параметры рамки */
+    margin-bottom: 10px; /* Отступ снизу */
+    position: relative; /* Относительное позиционирование */
+   }
+   .battery::before, .battery::after {
+    content: '55555555555555555555555555';
+    position: absolute;
+   }
+   .battery::after { /* Добавляем контакт справа */
+    width: 10px;
+    height: 20px;
+    background: #000;
+    right: -10px; top: 15px;
+   }
+   .battery::before { height: 100%;}
+   .low::before { /* Красная батарейка */
+    width: 33%;
+    background: #ED1C24;
+   }
+   .medium::before { /* Жёлтая батарейка */
+    width: 66%;
+    background: #FFC60B;
+   }
+      .high::before { /* Зелёная батарейка */
+	width: 95%;
+	height: 300%;
+    background: #00A055;
+	color: blue;
+	content: "565";
+   }
+
+.p {
+// background: blue;
+        color: white;
+        border-radius: 1em;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+		
+        margin-right: -50%;
+        transform: translate(-50%, -50% )
+}
+.comment {
+  width: 200px;
+  height: 40px;
+  float: left;
+  left: 5%;
+  display: block;
+  word-wrap: break-word;
+  overflow-x:hidden;
+
+  cursor: pointer;
+  border-radius: 10px;
+  color: Black;
+  background: #fae5d8;
+  border: 3px solid #0000cc;
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%) }   /* 4 */
+}
+.comment3 {
+  word-wrap: break-word;
+  overflow-x:hidden; 
+  padding: 20px 30px;
+}
+.footer{
+  width: 640px;
+  height: 640px;
+margin: 0 auto; /*центрируем элемент по горизонтали в пределах родительского блока*/
+}
+.row:hover {
+  transition: .4s linear;
+  box-shadow: inset 50px 0px 25px -30px #4b848d, inset -50px 0px 25px -30px #4b848d; /* Параметры тени */
+}
