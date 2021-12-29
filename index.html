@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="stylesheet" href="./styles/my_css_file.css">
+    <link rel="stylesheet" href="styles/styleKnopka2.css">
+    <script src="script/main.js"></script>
+    <script src="script/effect.js"></script>
+
+    <meta charset="utf-8">
+    <title>Коллекция кнопок</title>
+   <style type="text/css" id="styleMy">
+         .styleMenu {
+            position: relative;
+        width: 100%;
+       
+        height:auto;
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        border: 3px solid #cc000a;
+        color: #0000cc;
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+       .styleMenuVnutri1 {
+        width: 20px;
+        height: 15px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        display: block;
+        position: relative;
+        float: left;
+       }
+       .row {
+         position:relative;
+         width: 100%;
+         height:auto;
+        /*border: 3px solid #cc000a;*/
+       }
+      .styleMenu:after, .row:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+
+
+  </style>
+    
+   </head>
+   <body>
+    <div class="fasat"><img src="images/Степь дорога.png" 
+    alt="lorem"></div>
+    <div class="styleMenu">
+       <div class="styleMenuVnutri1" style= "left: 5%;">1</div>
+       <div class="styleMenuVnutri1" style= "left: 25%;" id="knopka" onclick="sayHi()">2</div>
+       <div class="styleMenuVnutri1"style= "left: 50%;">3</div>
+       <div class="styleMenuVnutri1"style= "left: 75%;">4</div>
+      </div>
+<br></br>
+    <br></br>
+    <div class="row">
+      <div class="comment" id="id01">.effect1 {
+         position: relative;
+         float: left;
+         left: 40%;
+         display: inline-block;
+       
+         padding: 20px 30px;
+         cursor: pointer;
+         border-radius: 10px;
+         color: white;
+         transition: .2s linear;
+         background:#3A2F28
+       }
+       .effect1:hover { 
+         box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+       }</div>
+      <div class="effect1">ЭФФЕКТ 1</div>  
+    </div>
+    <br></br>
+    <br></br>
+    <div class="row">
+      <div class="comment" id="id02">.effect2 {
+        position: relative;
+        left: 40%;
+        display: inline-block;
+      
+        padding: 20px 30px;
+        cursor: pointer;
+        border-radius: 10px;
+        color: white;
+        transition: .2s linear;
+        background:#C1F1E4
+      }
+      .effect2:hover { 
+        box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+      }</div>
+      <div class="effect2">ЭФФЕКТ 2</div>
+    </div>
+    <br></br>
+    <br></br>
+    <div class="row">
+    <div class="comment" id="id03">.effect3 {
+      position: relative;
+      left: 40%;
+      display: inline-block;
+    
+      padding: 20px 30px;
+      cursor: pointer;
+      border-radius: 10px;
+      color: white;
+      transition: .2s linear;
+      background:#D2973D;
+    }
+    .effect3:hover {
+      box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;
+    }</div>
+    <div class="effect3">ЭФФЕКТ 3</div>
+   </div>
+    <br></br>
+    <br></br>
+    <div class="row">
+    <div class="comment" id="id04">.effect4 {
+      position: relative;
+      left: 40%;
+      display: inline-block;
+      
+      padding: 20px 30px;
+      cursor: pointer;
+      border-radius: 10px;
+      color: white;
+      transition: .2s linear;
+      background: #C76637;
+    }
+    .effect4:hover {
+      box-shadow: 2px 2px white, 4px 4px #C76637;
+      /*// top: -4px; смещение сильное*/
+     /* //left: -4px; смещение сильное*/
+    }</div>
+    <div class="effect4">ЭФФЕКТ 4</div>
+   </div>
+    <br></br>
+    <br></br>
+    <div class="row">
+    <div class="comment" id="id05">.effect5:after,
+      .effect5:before {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center center;
+      }
+      .effect5:before {
+        box-shadow: inset 0 20px 0 rgba(0, 250, 250, 0.6), inset 20px 0 0 rgba(0, 200, 200, 0.6), inset 0 -20px 0 rgba(0, 150, 200, 0.6), inset -20px 0 0 rgba(0, 200, 250, 0.6);
+        animation: rotate-before 2s -0.5s linear infinite;
+      }
+      .effect5:after {
+        box-shadow: inset 0 20px 0 rgba(250, 250, 0, 0.6), inset 20px 0 0 rgba(250, 200, 0, 0.6), inset 0 -20px 0 rgba(250, 150, 0, 0.6), inset -20px 0 0 rgba(250, 100, 0, 0.6);
+        animation: rotate-after 2s -0.5s linear infinite;
+      }
+      @keyframes rotate-after {
+        0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+        50% {transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);}
+        100% {transform: rotateZ(360deg) scaleX(1) scaleY(1);}
+      }
+      @keyframes rotate-before {
+        0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+        50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);}
+        100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
+      }</div>
+    <div class="effect5">ЭФФЕКТ 5</div>
+   </div>
+    <br></br>
+    <br></br>
+    <div class="row a">
+      <div class="footer"><img src="images/Кради как художник.png" 
+        alt="lorem"></div>
+   </div>
+    <br></br>
+    <br></br>
+   </body>
+</html>
